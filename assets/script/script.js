@@ -1,5 +1,5 @@
 
-
+//******************************************************************Article API*********************************************************************** */
 var articleURL = 'https://newsapi.org/v2/everything?q=esports&sortBy=popularity&apiKey=f38cc49da4df4fd0b9ceea723e83cb15';
 
 $.ajax({
@@ -62,6 +62,7 @@ $.ajax({
 })
 
 
+//******************************************************************NavBar jQuery*********************************************************************** */
 function navBar(){
 $(".lb").on("click", function (){
     $('.hm').removeClass('active')
