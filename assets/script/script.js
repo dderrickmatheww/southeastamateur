@@ -64,6 +64,10 @@ $.ajax({
 
 //******************************************************************NavBar jQuery*********************************************************************** */
 function navBar(){
+$(".homePage").show()
+$(".leaderBoard").hide()
+$(".competePage").hide()
+
 $(".lb").on("click", function (){
     $('.hm').removeClass('active')
     $('.lb').addClass('active')
@@ -71,6 +75,10 @@ $(".lb").on("click", function (){
     $('.to').removeClass('active')
     $('.con').removeClass('active')
     $('.hd').removeClass('active')
+    $(".homePage").hide()
+    $(".leaderBoard").show()
+    $(".competePage").hide()
+    
 })
 $(".cm").on("click", function (){
     $('.hm').removeClass('active')
@@ -79,6 +87,9 @@ $(".cm").on("click", function (){
     $('.to').removeClass('active')
     $('.con').removeClass('active')
     $('.hd').removeClass('active')
+    $(".homePage").hide()
+    $(".leaderBoard").hide()
+    $(".competePage").show()
 })
 $(".to").on("click", function (){
     $('.hm').removeClass('active')
@@ -87,6 +98,9 @@ $(".to").on("click", function (){
     $('.to').addClass('active')
     $('.con').removeClass('active')
     $('.hd').removeClass('active')
+    $(".homePage").hide()
+    $(".leaderBoard").hide()
+    $(".competePage").hide()
 })
 $(".con").on("click", function (){
     $('.hm').removeClass('active')
@@ -95,6 +109,9 @@ $(".con").on("click", function (){
     $('.to').removeClass('active')
     $('.con').addClass('active')
     $('.hd').removeClass('active')
+    $(".homePage").hide()
+    $(".leaderBoard").hide()
+    $(".competePage").hide()
 })
 $(".hd").on("click", function (){
     $('.hm').removeClass('active')
@@ -103,6 +120,9 @@ $(".hd").on("click", function (){
     $('.to').removeClass('active')
     $('.con').removeClass('active')
     $('.hd').addClass('active')
+    $(".homePage").hide()
+    $(".leaderBoard").hide()
+    $(".competePage").hide()
 })
 $(".hm").on("click", function (){
     $('.hm').addClass('active')
@@ -111,6 +131,9 @@ $(".hm").on("click", function (){
     $('.to').removeClass('active')
     $('.con').removeClass('active')
     $('.hd').removeClass('active')
+    $(".homePage").show()
+    $(".leaderBoard").hide()
+    $(".competePage").hide()
 })
 }
 navBar()

@@ -17,6 +17,21 @@
     background-color: rgba(173, 125, 19, 0.836);
     
 }
+.leader{
+    background-color: rgba(173, 125, 19, 0.836);
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.btn-primary{
+    background-color: rgba(173, 125, 19, 0.836);
+    border: 1px solid  rgba(173, 124, 19, 0.411);
+}
+.btn-primary:hover{
+   background-color:  rgba(173, 124, 19, 0.411);
+   color: black;
+   border: 1px solid black;
+
+}
 .art-header{
     width: 100%;
     font-family: 'Josefin Sans', sans-serif;
