@@ -13,7 +13,7 @@ if(isset($_POST['submit'])){
     $headers='From: '.$email;
 
     if(mail($to, $subject, $message, $headers)){
-        echo 
+        echo "Success";
 
     }
     else{
