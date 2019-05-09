@@ -255,8 +255,8 @@
     </div>
     <div class="container competePage">
             <h1 class="display-4 text-center art-header">Compete</h1>
-            <h3><?= $result;</h3>
-        <form class="needs-validation" action="" method="POST" novalidate>
+            
+        <form class="needs-validation" action="https://formspree.io/dderrickmatheww@gmail.com" method="post" novalidate>
                 <div class="form-row">
                   <div class="col-md-4 mb-3">
                     <label for="validationTooltip01">First name</label>
@@ -278,9 +278,9 @@
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
                       </div>
-                      <input type="email" name="email" class="form-control" id="validationTooltipUsername" placeholder="Email" aria-describedby="validationTooltipUsernamePrepend" required>
+                      <input type="email" name="_replyto" class="form-control" id="validationTooltipUsername" placeholder="Email" aria-describedby="validationTooltipUsernamePrepend" required>
                       <div class="invalid-tooltip">
-                        Please choose a unique and valid email.
+                        Please choose a valid email.
                       </div>
                     </div>
                   </div>
@@ -311,7 +311,7 @@
                         </select>
                   </div>
                 </div>
-                <button class="btn btn-primary" name="submit" type="submit">Submit form</button>
+                <button class="btn btn-primary" name="submit" value="submit" type="submit">Submit form</button>
               </form>
     </div>
     <!-- Optional JavaScript -->

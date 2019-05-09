@@ -2,7 +2,7 @@
 $result="";
 
 if(isset($_POST['submit'])){
-require 'PHPMailerAutoload.php';
+require '../../southeastamateur/assets/PHPMailerAutoload.php';
 $mail = new PHPMailer;
 
 $mail->Host='smtp.gmail.com';
