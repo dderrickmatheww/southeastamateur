@@ -22,8 +22,8 @@
         <div class="container">
 
             <h1 class="display-4 text-center"> <img class="float-right trophy"
-                    src="assets/images/favicon.ico">Southeast Amateur League<img
-                    class="float-left trophy" src="assets/images/favicon.ico">
+                    src="assets/images/trophyIcon.png">Southeast Amateur League<img
+                    class="float-left trophy" src="assets/images/trophyIcon.png">
             </h1>
 
             <p class="lead text-center">Where gamers compete</p>
@@ -118,7 +118,7 @@
     <div class="container leaderBoard">
             <h1 class="display-4 text-center art-header">Leaderboards</h1>
         <div class="row">
-            <div class="col-6">
+            <div class="col">
                 <h3 class="display-4 text-center mt-5 mb-5">Apex Legends</h3>
                 <table class="table table-bordered table-dark leader">
                     <thead>
@@ -151,7 +151,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col-6">
+            <div class="col">
                 <h3 class="display-4 text-center mt-5 mb-5">Fortnite</h3>
                 <table class="table table-bordered table-dark leader">
                     <thead>
@@ -186,7 +186,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col">
                 <h3 class="display-4 text-center mt-5 mb-5">Rocket League</h3>
                 <table class="table table-bordered table-dark leader">
                     <thead>
@@ -219,7 +219,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col-6">
+            <div class="col">
                 <h3 class="display-4 text-center mt-5 mb-5">NBA 2K</h3>
                 <table class="table table-bordered table-dark leader">
                     <thead>
@@ -256,30 +256,37 @@
     </div>
     <div class="container competePage">
             <h1 class="display-4 text-center art-header">Compete</h1>
-            
-        <form class="needs-validation" target="_blank" action="https://formspree.io/dderrickmatheww@gmail.com" method="post" novalidate>
+            <p class="lead text-center">
+                  If you're willing to compete please fill out the information below. This will go through an approval process and as long as all the information is accurate you will receive an
+                  approval email within 24-48 hours. We will be upgrading as S.A.L. developes so bear with us on the on this process.
+                  <br>
+            </p>
+            <p class="lead important text-center mb-5">
+                  Thank you! - The S.A.L. Team <img class="logoThumbnail" src="assets/images/trophyIcon.png">
+            </p>
+        <form class="needs-validation competitionForm" action="https://formspree.io/dderrickmatheww@gmail.com" method="post" novalidate>
                 <div class="form-row">
-                  <div class="col-md-4 mb-3">
+                  <div class="col-md-4 mb-3 mt-3">
                     <label for="validationTooltip01">First name</label>
-                    <input type="text" name="firstname" class="form-control" id="validationTooltip01" placeholder="First name" required>
+                    <input type="text" name="First Name:" class="form-control" id="validationTooltip01" placeholder="First name" required>
                     <div class="valid-tooltip">
                       Looks good!
                     </div>
                   </div>
-                  <div class="col-md-4 mb-3">
+                  <div class="col-md-4 mb-3 mt-3">
                     <label for="validationTooltip02">Last name</label>
-                    <input type="text" name="lastname" class="form-control" id="validationTooltip02" placeholder="Last name" required>
+                    <input type="text" name="Last Name:" class="form-control" id="validationTooltip02" placeholder="Last name" required>
                     <div class="valid-tooltip">
                       Looks good!
                     </div>
                   </div>
-                  <div class="col-md-4 mb-3">
+                  <div class="col-md-4 mb-3 mt-3">
                     <label for="validationTooltipUsername">Email</label>
                     <div class="input-group">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
                       </div>
-                      <input type="email" name="_replyto" class="form-control" id="validationTooltipUsername" placeholder="Email" aria-describedby="validationTooltipUsernamePrepend" required>
+                      <input type="email" name="Email:" class="form-control" id="validationTooltipUsername" placeholder="Email" aria-describedby="validationTooltipUsernamePrepend" required>
                       <div class="invalid-tooltip">
                         Please choose a valid email.
                       </div>
@@ -287,21 +294,28 @@
                   </div>
                 </div>
                 <div class="form-row">
-                  <div class="col-md-6 mb-3">
+                  <div class="col-md-3 mb-3 mt-3">
                     <label for="validationTooltip03">City & State</label>
-                    <input type="text" name="city_state" class="form-control" id="validationTooltip03" placeholder="City & state" required>
+                    <input type="text" name="City/State:" class="form-control" id="validationTooltip03" placeholder="City & state" required>
                     <div class="invalid-tooltip">
                       Please provide a valid city & state.
                     </div>
                   </div>
-                  <div class="col-md-3 mb-3">
+                  <div class="col-md-3 mb-3 mt-3">
+                        <label for="validationTooltip03">Date of competition</label>
+                        <input type="date" name="Date:" class="form-control" id="validationTooltip03" placeholder="Date of competition" required>
+                        <div class="invalid-tooltip">
+                          Please provide a competition date.
+                        </div>
+                      </div>
+                  <div class="col-md-3 mb-3 mt-3">
                     <label for="validationTooltip04">Age</label>
-                    <input type="number" name="age" class="form-control" id="validationTooltip04" placeholder="Age" required>
+                    <input type="number" name="Age:" class="form-control" id="validationTooltip04" placeholder="Age" required>
                     <div class="invalid-tooltip">
                       Please provide your age.
                     </div>
                   </div>
-                  <div class="col-md-3 mb-3">
+                  <div class="col-md-3 mb-3 mt-3">
                         <label for="validationTooltip04">Game</label>
                         <select name="game" class="custom-select">
                                 <option selected>Open this select menu</option>
@@ -312,7 +326,7 @@
                         </select>
                   </div>
                 </div>
-                <button class="btn btn-primary" name="submit" target="_blank" value="submit" type="submit">Submit form</button>
+                <button class="btn btn-primary" value="submit" type="submit">Submit form</button>
               </form>
     </div>
     <!-- Optional JavaScript -->

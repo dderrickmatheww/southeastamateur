@@ -30,6 +30,19 @@
    background-color:  rgba(173, 124, 19, 0.411);
    color: black;
    border: 1px solid black;
+}
+.logoThumbnail{
+    width: 30px;
+    height: 30px;
+}
+.competitionForm{
+    padding: 3%;
+    margin-top: 8%;
+    margin: 0 auto;
+    margin-bottom: 8%;
+    width: 100%;
+     background: linear-gradient(to top, rgba(173, 125, 19, 0.836) 0%,rgba(187, 156, 16, 0) 100%);
+     border: 1px solid black;
 
 }
 .art-header{
@@ -74,4 +87,30 @@
 }
 .nav-link:hover {
     color: white;
+}
+
+@media only screen and (max-width: 600px) { 
+    .display-4{
+        font-size: 25px;
+    }
+    .trophy{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-link{
+        font-size: 10px;
+        padding: 5px;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+    .hd {
+        display: none;
+      }
+      .art-img{
+        width: 100%;
+        height: 300px;
+    }
+    .important {
+        font-size: 20px;
+    }
 }
