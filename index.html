@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link href="../southeastamateur/assets/images/favicon.ico" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="../southeastamateur/assets/css/style.css">
+    <?php require '../southeastamateur/assets/php/mail_handler.php'; /?>
     <title>Southeast Amateur League</title>
 </head>
 
@@ -254,7 +255,8 @@
     </div>
     <div class="container competePage">
             <h1 class="display-4 text-center art-header">Compete</h1>
-        <form class="needs-validation" action="../southeastamateur/assets/php/mail_handler.php" method="POST" novalidate>
+            <h3><?= $result;</h3>
+        <form class="needs-validation" action="" method="POST" novalidate>
                 <div class="form-row">
                   <div class="col-md-4 mb-3">
                     <label for="validationTooltip01">First name</label>
@@ -327,6 +329,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   
     <script src="assets/script/script.js"></script>
 </body>
 
