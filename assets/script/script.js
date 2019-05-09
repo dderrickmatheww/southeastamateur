@@ -68,6 +68,7 @@ $(".homePage").show()
 $(".leaderBoard").hide()
 $(".competePage").hide()
 $(".contactUsPage").hide()
+$(".tornPage").hide()
 
 $(".lb").on("click", function (){
     $('.hm').removeClass('active')
@@ -80,6 +81,7 @@ $(".lb").on("click", function (){
     $(".leaderBoard").show()
     $(".competePage").hide()
     $(".contactUsPage").hide()
+    $(".tornPage").hide()
     
 })
 $(".cm").on("click", function (){
@@ -93,6 +95,7 @@ $(".cm").on("click", function (){
     $(".leaderBoard").hide()
     $(".competePage").show()
     $(".contactUsPage").hide()
+    $(".tornPage").hide()
 })
 $(".to").on("click", function (){
     $('.hm').removeClass('active')
@@ -105,6 +108,8 @@ $(".to").on("click", function (){
     $(".leaderBoard").hide()
     $(".competePage").hide()
     $(".contactUsPage").hide()
+    $(".tornPage").show()
+    
 })
 $(".con").on("click", function (){
     $('.hm').removeClass('active')
@@ -117,6 +122,7 @@ $(".con").on("click", function (){
     $(".leaderBoard").hide()
     $(".competePage").hide()
     $(".contactUsPage").show()
+    $(".tornPage").hide()
 })
 $(".hd").on("click", function (){
     $('.hm').removeClass('active')
@@ -129,6 +135,7 @@ $(".hd").on("click", function (){
     $(".leaderBoard").hide()
     $(".competePage").hide()
     $(".contactUsPage").hide()
+    $(".tornPage").hide()
 })
 $(".hm").on("click", function (){
     $('.hm').addClass('active')
@@ -141,6 +148,7 @@ $(".hm").on("click", function (){
     $(".leaderBoard").hide()
     $(".competePage").hide()
     $(".contactUsPage").hide()
+    $(".tornPage").hide()
 })
 }
 navBar()
