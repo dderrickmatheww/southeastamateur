@@ -60,3 +60,56 @@ $.ajax({
     $(".mainArticles").append(articles);
   }
 })
+
+
+function navBar(){
+$(".lb").on("click", function (){
+    $('.hm').removeClass('active')
+    $('.lb').addClass('active')
+    $('.cm').removeClass('active')
+    $('.to').removeClass('active')
+    $('.con').removeClass('active')
+    $('.hd').removeClass('active')
+})
+$(".cm").on("click", function (){
+    $('.hm').removeClass('active')
+    $('.lb').removeClass('active')
+    $('.cm').addClass('active')
+    $('.to').removeClass('active')
+    $('.con').removeClass('active')
+    $('.hd').removeClass('active')
+})
+$(".to").on("click", function (){
+    $('.hm').removeClass('active')
+    $('.lb').removeClass('active')
+    $('.cm').removeClass('active')
+    $('.to').addClass('active')
+    $('.con').removeClass('active')
+    $('.hd').removeClass('active')
+})
+$(".con").on("click", function (){
+    $('.hm').removeClass('active')
+    $('.lb').removeClass('active')
+    $('.cm').removeClass('active')
+    $('.to').removeClass('active')
+    $('.con').addClass('active')
+    $('.hd').removeClass('active')
+})
+$(".hd").on("click", function (){
+    $('.hm').removeClass('active')
+    $('.lb').removeClass('active')
+    $('.cm').removeClass('active')
+    $('.to').removeClass('active')
+    $('.con').removeClass('active')
+    $('.hd').addClass('active')
+})
+$(".hm").on("click", function (){
+    $('.hm').addClass('active')
+    $('.lb').removeClass('active')
+    $('.cm').removeClass('active')
+    $('.to').removeClass('active')
+    $('.con').removeClass('active')
+    $('.hd').removeClass('active')
+})
+}
+navBar()
