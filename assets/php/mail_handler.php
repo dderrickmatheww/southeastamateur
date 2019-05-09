@@ -1,23 +1,32 @@
 <?php
+$result="";
+
 if(isset($_POST['submit'])){
-    $firstname=$_POST['firstname'];
-    $lastname=$_POST['lastname']; 
-    $city_state=$_POST['city_state'];
-    $email=$_POST['email'];
-    $age=$_POST['age'];
-    $game=$_POST['game'];
+require 'PHPMailerAutoload.php';
+$mail = new PHPMailer;
 
-    $to='dderrickmatheww@gmail.com';
-    $subject='Customer Submission';
-    $message='Name: '.$firstname." ".$lastname."\n".'City & State: '.$city_state."\n".'Age: '.$age."\n".'Game: '.$game;
-    $headers='From: '.$email;
+$mail->Host='smtp.gmail.com';
+$mail->Port=587;
+$mail->SMTPAuth=true;
+$mail->SMTPSecure='tls';
+$mail->Username='dderrickmatheww@gmail.com';
+$mail->Password='blind565';
 
-    if(mail($to, $subject, $message, $headers)){
-        echo "Success";
+$mail->setForm($_POST['email']);
+$mail->addAddress('dderrickmatheww@gmail.com');
+$mail->addReplyTo($_POST['email']);
 
-    }
-    else{
-        echo "Something went wrong!";
-    }
+$mail->isHTML(true);
+$mail->Subject='Competition Submission: '.$_POST['firstname']." ".$_POST['lastname'];
+$mail->Body='<h1 class="text-centered"> Game: '.$_POST['game'].'<br> First Name: '.$_POST['firstname'].'<br>Last Name: '.$_POST['lastname'].'<br>Age: '.$_POST['age'].'<br>Email: '.$_POST['email'].'<br>City & State '.$_POST['city_state'].'</h1>'
+
+
+if(!$mail->send()){
+$result='Something went wrong. Make sure your email is correct and try again'
+}
+else{
+    $result="Thanks ".$_POST['firstname'].' for submitting a competition form. We will review your request and get back to you shortly!'
+}
+
 }
 ?>
