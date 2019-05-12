@@ -223,7 +223,6 @@ function addLose() {
     })
 }
 
-
 function addPlayer() {
     inquirer
         .prompt([
@@ -335,7 +334,6 @@ function deletePlayer() {
             })
     })
 }
-
 
 function exit() {
     connection.end()
