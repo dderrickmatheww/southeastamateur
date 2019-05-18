@@ -1,0 +1,119 @@
+<div class="container leaderBoard">
+        <h1 class="display-4 text-center art-header">Leaderboards</h1>
+        <div class="row">
+            <div class="col">
+                <h3 class="display-4 text-center mt-5 mb-5">Apex Legends</h3>
+                <table class="table table-bordered table-dark leader">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID #</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Wins</th>
+                            <th scope="col">Loses</th>
+                            <th scope="col">Team</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      {{#each apex}}
+                        <tr>
+                            <th scope="row">{{this.player_id}}</th>
+                            <td>{{this.playerfirst_name}}</td>
+                            <td>{{this.playerlast_name}}</td>
+                            <td>{{this.num_wins}}</td>
+                            <td>{{this.num_loses}}</td>
+                            <td>{{this.team_name}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <h3 class="display-4 text-center mt-5 mb-5">Fortnite</h3>
+                <table class="table table-bordered table-dark leader">
+                    <thead>
+                      
+                        <tr>
+                            <th scope="col">ID #</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Wins</th>
+                            <th scope="col">Loses</th>
+                            <th scope="col">Team</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      {{#each fortnite}}
+                         <tr>
+                            <th scope="row">{{this.player_id}}</th>
+                            <td>{{this.playerfirst_name}}</td>
+                            <td>{{this.playerlast_name}}</td>
+                            <td>{{this.num_wins}}</td>
+                            <td>{{this.num_loses}}</td>
+                            <td>{{this.team_name}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3 class="display-4 text-center mt-5 mb-5">Rocket League</h3>
+                <table class="table table-bordered table-dark leader">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID #</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Wins</th>
+                            <th scope="col">Loses</th>
+                            <th scope="col">Team</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each rocket_league}}
+                         <tr>
+                            <th scope="row">{{this.player_id}}</th>
+                            <td>{{this.playerfirst_name}}</td>
+                            <td>{{this.playerlast_name}}</td>
+                            <td>{{this.num_wins}}</td>
+                            <td>{{this.num_loses}}</td>
+                            <td>{{this.team_name}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <h3 class="display-4 text-center mt-5 mb-5">NBA 2K</h3>
+                <table class="table table-bordered table-dark leader">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID #</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Wins</th>
+                            <th scope="col">Loses</th>
+                            <th scope="col">Team</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each nba_2k}}
+                         <tr>
+                            <th scope="row">{{this.player_id}}</th>
+                            <td>{{this.playerfirst_name}}</td>
+                            <td>{{this.playerlast_name}}</td>
+                            <td>{{this.num_wins}}</td>
+                            <td>{{this.num_loses}}</td>
+                            <td>{{this.team_name}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+       $('.lb').addClass('active')
+    </script>

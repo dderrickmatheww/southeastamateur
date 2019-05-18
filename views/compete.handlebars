@@ -1,0 +1,88 @@
+ <div class="container competePage">
+        <h1 class="display-4 text-center art-header">Compete</h1>
+        <p class="lead text-center">
+            If you're willing to compete please fill out the information below. This will go through an approval process
+            and as long as all the information is accurate you will receive an
+            approval email within 24-48 hours. We will be upgrading as S.A.L. developes so bear with us on the on this
+            process.
+            <br>
+        </p>
+        <p class="lead important text-center mb-5">
+            Thank you! - The S.A.L. Team <img class="logoThumbnail" src="assets/images/trophyIcon.png">
+        </p>
+        <form class="needs-validation competitionForm" action="https://formspree.io/dderrickmatheww@gmail.com"
+            method="post" novalidate>
+            <div class="form-row">
+                <div class="col-md-4 mb-3 mt-3">
+                    <label for="validationTooltip01">First name</label>
+                    <input type="text" name="First Name:" class="form-control" id="validationTooltip01"
+                        placeholder="First name" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mt-3">
+                    <label for="validationTooltip02">Last name</label>
+                    <input type="text" name="Last Name:" class="form-control" id="validationTooltip02"
+                        placeholder="Last name" required>
+                    <div class="valid-tooltip">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 mt-3">
+                    <label for="validationTooltipUsername">Email</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                        </div>
+                        <input type="email" name="Email:" class="form-control" id="validationTooltipUsername"
+                            placeholder="Email" aria-describedby="validationTooltipUsernamePrepend" required>
+                        <div class="invalid-tooltip">
+                            Please choose a valid email.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-3 mb-3 mt-3">
+                    <label for="validationTooltip03">City & State</label>
+                    <input type="text" name="City/State:" class="form-control" id="validationTooltip03"
+                        placeholder="City & state" required>
+                    <div class="invalid-tooltip">
+                        Please provide a valid city & state.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 mt-3">
+                    <label for="validationTooltip03">Date of competition</label>
+                    <input type="date" name="Date:" class="form-control" id="validationTooltip03"
+                        placeholder="Date of competition" required>
+                    <div class="invalid-tooltip">
+                        Please provide a competition date.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 mt-3">
+                    <label for="validationTooltip04">Age</label>
+                    <input type="number" name="Age:" class="form-control" id="validationTooltip04" placeholder="Age"
+                        required>
+                    <div class="invalid-tooltip">
+                        Please provide your age.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 mt-3">
+                    <label for="validationTooltip04">Game</label>
+                    <select name="game" class="custom-select">
+                        <option selected>Open this select menu</option>
+                        <option value="Apex Legends">Apex Legends</option>
+                        <option value="Fortnite">Fortnite</option>
+                        <option value="Rocket League">Rocket League</option>
+                        <option value="NBA 2K">NBA 2K</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn btn-primary" value="submit" type="submit">Submit form</button>
+        </form>
+    </div>
+
+    <script>
+         $('.cm').addClass('active')
+    </script>
