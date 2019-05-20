@@ -141,8 +141,9 @@
     .art-header{
         margin-top: 20%;
     }
-    .container {
+    .container .row .col {
         padding-right: 0px;
          padding-left: 0px;
     }
+   
 }
