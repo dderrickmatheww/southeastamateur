@@ -1,4 +1,4 @@
-*HerokuGuide.md
-*node_modules/
-*index.html
-*.env
+
+node_modules/
+private/
+config/
