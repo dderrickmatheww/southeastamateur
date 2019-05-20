@@ -1,5 +1,4 @@
-HerokuGuide.md
-node_modules/
-index.html
-.env
-api.env
+*HerokuGuide.md
+*node_modules/
+*index.html
+*.env
