@@ -1,14 +1,14 @@
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
-    host: "mna97msstjnkkp7h.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    host: "t89yihg12rw77y6f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     // Your port; if not 3306
     port: 3306,
     // Your username
-    user: "oudkbrbyyj2ju89y",
+    user: "kuw37aq6i37nf3bl",
     // Your password
-    password: "f3bscxv2hxm0cbjy",
-    database: "tya93pwjife9yk0r"
+    password: "idxsrrwu50l8ws61",
+    database: "kvebdvy2kqiobjdc"
 });
 //Make connection
 connection.connect(function (err) {
