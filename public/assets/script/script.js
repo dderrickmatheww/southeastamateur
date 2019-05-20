@@ -66,32 +66,47 @@ $.ajax({
 function navBar(){
 
 
-  if(href === "/leaderboards"){
+$(".lb").on("click", function (){
     $('.hm').removeClass('active')
     $('.lb').addClass('active')
     $('.cm').removeClass('active')
     $('.to').removeClass('active')
     $('.con').removeClass('active')
     $('.hd').removeClass('active')
-}
-if(href === "/compete"){
+    $(".homePage").hide()
+    $(".leaderBoard").show()
+    $(".competePage").hide()
+    $(".contactUsPage").hide()
+    $(".tornPage").hide()
+    
+})
+$(".cm").on("click", function (){
     $('.hm').removeClass('active')
     $('.lb').removeClass('active')
     $('.cm').addClass('active')
     $('.to').removeClass('active')
     $('.con').removeClass('active')
     $('.hd').removeClass('active')
-}
-
-if(href === "/t"){
+    $(".homePage").hide()
+    $(".leaderBoard").hide()
+    $(".competePage").show()
+    $(".contactUsPage").hide()
+    $(".tornPage").hide()
+})
+$(".to").on("click", function (){
     $('.hm').removeClass('active')
     $('.lb').removeClass('active')
     $('.cm').removeClass('active')
     $('.to').addClass('active')
     $('.con').removeClass('active')
     $('.hd').removeClass('active')
-
-}
+    $(".homePage").hide()
+    $(".leaderBoard").hide()
+    $(".competePage").hide()
+    $(".contactUsPage").hide()
+    $(".tornPage").show()
+    
+})
 $(".con").on("click", function (){
     $('.hm').removeClass('active')
     $('.lb').removeClass('active')
@@ -99,7 +114,11 @@ $(".con").on("click", function (){
     $('.to').removeClass('active')
     $('.con').addClass('active')
     $('.hd').removeClass('active')
-
+    $(".homePage").hide()
+    $(".leaderBoard").hide()
+    $(".competePage").hide()
+    $(".contactUsPage").show()
+    $(".tornPage").hide()
 })
 $(".hd").on("click", function (){
     $('.hm').removeClass('active')
@@ -108,8 +127,12 @@ $(".hd").on("click", function (){
     $('.to').removeClass('active')
     $('.con').removeClass('active')
     $('.hd').addClass('active')
+    $(".homePage").hide()
+    $(".leaderBoard").hide()
+    $(".competePage").hide()
+    $(".contactUsPage").hide()
+    $(".tornPage").hide()
 })
-
 $(".hm").on("click", function (){
     $('.hm').addClass('active')
     $('.lb').removeClass('active')
@@ -117,7 +140,11 @@ $(".hm").on("click", function (){
     $('.to').removeClass('active')
     $('.con').removeClass('active')
     $('.hd').removeClass('active')
-
+    $(".homePage").show()
+    $(".leaderBoard").hide()
+    $(".competePage").hide()
+    $(".contactUsPage").hide()
+    $(".tornPage").hide()
 })
 }
 navBar()
