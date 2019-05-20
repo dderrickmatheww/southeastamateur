@@ -91,7 +91,7 @@ if(href === "/t"){
     $('.con').removeClass('active')
     $('.hd').removeClass('active')
 
-})
+}
 $(".con").on("click", function (){
     $('.hm').removeClass('active')
     $('.lb').removeClass('active')
